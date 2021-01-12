@@ -26,74 +26,72 @@
     <header>
         <div class="header-wrapper">
             <div class="main-header">
-                <div class="container-fluid custom-container">
+                <div class="container-fluid custom-container d-flex justify-content-between flex-column flex-lg-row">
                     <!-- logo -->
-                    <div class="row no-gutters">
-                        <div class="col-lg-2 mb-2 col-md-12">
-                            <div class="header-logo">
-                                <a href="rokomari.com">
-                                    <img src="/resources/img/logo.png" alt="Rokomari Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- dropdown start -->
-                        <div class="col-lg-7 col-md-9 col-sm-9 col-12">
-                            <div class="search-bar">
-                                <form action="/search" method="get">
-                                    <div class="input-group search-section">
-                                        <div class="input-group-prepend">
-                                            <button class="btn select-btn dropdown-toggle" type="button"
-                                                data-toggle="dropdown">Books
-                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Name 1</a>
-                                                <a class="dropdown-item" href="#">Name 1</a>
-                                                <a class="dropdown-item" href="#">Name 1</a>
-                                                <a class="dropdown-item" href="#">Name 1</a>
-                                            </div>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Search by Book Name">
-                                        <div class="input-group-append">
-                                            <button class="btn" type="submit"><i class="fa fa-search"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- dropdown end -->
 
-                        <!-- user options -->
-                        <div class="col-12 col-lg-3 col-md-3 col-sm-3">
-                            <div class="header-last">
-                                <div class="cart-menu">
-                                    <a href="/cart">
-                                        <img src="/resources/img/cart.png" alt="Cart Logo">
-                                    </a>
-                                </div>
-                                <div class="user-menu">
-                                    <a href="/user">
-                                        <img src="/resources/img/man.png" alt="User Icon">
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- user options end-->
+                    <div class="header-logo">
+                        <a href="rokomari.com">
+                            <img src="resources/img/logo.png" alt="Rokomari Logo">
+                        </a>
                     </div>
+
+                    <!-- dropdown start -->
+                    <div class="search-bar">
+                        <form action="/search" method="get">
+                            <div class="input-group search-section">
+                                <div class="input-group-prepend">
+                                    <button class="btn select-btn dropdown-toggle" type="button"
+                                        data-toggle="dropdown">Books
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Name 1</a>
+                                        <a class="dropdown-item" href="#">Name 1</a>
+                                        <a class="dropdown-item" href="#">Name 1</a>
+                                        <a class="dropdown-item" href="#">Name 1</a>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control font-italic" placeholder="Search by book name">
+                                <div class="input-group-append">
+                                    <button class="btn" type="submit"><i class="fa fa-search"
+                                            aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- dropdown end -->
+
+                    <!-- user options -->
+
+                    <div class="header-last ">
+                        <div class="cart-menu">
+                            <a href="/cart">
+                                <img src="resources/img/cart.png" alt="Cart Logo">
+                            </a>
+                        </div>
+                        <div class="user-menu">
+                            <a href="/user">
+                                <img src="resources/img/man.png" alt="User Icon">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- user options end-->
+
                 </div>
             </div>
-            <hr>
+
             <!-- nav bar start -->
-            <div class="menu-container">
+            <div class="menu-container custom-container">
                 <nav>
                     <ul>
                         <li><a href="#" id="books">BOOKS</a>
                         </li>
                         <li><a href="#" id="electronic">ELECTRONICS</a></li>
                         <li><a href="#" id="gift">GIFT FINDER</a></li>
-                        <li><a href="#" id="corporate">CORPORATE SALE</a></li>
+                        <li><a href="#" id="corporate">CORPORATE SALES</a></li>
                         <li><a href="#" id="other">OTHERS</a></li>
                         <li><a href="#">BLOG</a></li>
                     </ul>
@@ -259,20 +257,20 @@
 
     <!-- SLIDER SECTION START -->
     <div class="slider-section ">
-        <div class="container-fluid d-flex h-100 flex-column slider-container custom-container">
-            <div class="row">
+        <div class="container-fluid d-flex h-100 flex-column  custom-container">
+            <div class="row d-flex justify-content-between">
                 <!-- banner text -->
-                <div class="col-12 col-sm-6">
-                    <p style="font-size: 2.5rem; color: #43b3ee;">Are you ready to learn?</p>
-                    <p style="font-size: 7.5rem; color: #fff; line-height: 1;">Start learning
+                <div class="col-6 col-sm-6 slider-text">
+                    <p style="font-size: 2.5rem;color: #43b3ee;padding-bottom: 1.5rem;">Are you ready to learn?</p>
+                    <p style="font-size: 7.8rem; color: #fff; line-height: 1.1;">Start learning
                         new things Daily</p>
                     <button class="btn btn-start btn-danger">Let's Start</button>
                 </div>
 
                 <!-- banner image -->
-                <div class="col-6">
+                <div class="col-6 text-right">
                     <div class="banner-photo">
-                        <img src="/resources/img/pc.png" alt="pc photo" srcset="">
+                        <img src="resources/img/pc.png" alt="pc photo" srcset="">
                     </div>
                 </div>
             </div>
@@ -289,7 +287,7 @@
                 <div class="view-card">
                     <div class="view-icon">
                         <div class="rank-icon">
-                            <img src="/resources/img/cap.png" alt="topics icon">
+                            <img src="resources/img/cap.png" alt="topics icon">
                         </div>
                         <div class="description">
                             <h4>1500+ Topic</h4>
@@ -304,7 +302,7 @@
                 <div class="view-card">
                     <div class="view-icon">
                         <div class="rank-icon">
-                            <img src="/resources/img/student.png" alt="topics icon">
+                            <img src="resources/img/student.png" alt="topics icon">
                         </div>
                         <div class="description">
                             <h4>1800+ Students</h4>
@@ -319,7 +317,7 @@
                 <div class="view-card">
                     <div class="view-icon">
                         <div class="rank-icon">
-                            <img src="/resources/img/test.png" alt="topics icon">
+                            <img src="resources/img/test.png" alt="topics icon">
                         </div>
                         <div class="description">
                             <h4>9K+ Test Tokens</h4>
@@ -334,7 +332,7 @@
                 <div class="view-card">
                     <div class="view-icon">
                         <div class="rank-icon">
-                            <img src="/resources/img/grade.png" alt="topics icon">
+                            <img src="resources/img/grade.png" alt="topics icon">
                         </div>
                         <div class="description">
                             <h4>2000 A+</h4>
@@ -345,6 +343,7 @@
             </div>
             <!-- card end -->
         </div>
+
     </section>
     <!-- report section end -->
 
@@ -352,23 +351,23 @@
     <section class="online-course ">
         <div class="course-container container-fluid custom-container">
             <!-- title -->
-            <p class="title">Online Courses</p>
+            <p class="title mb-0">Online Courses</p>
 
             <!-- course card start -->
             <div class="row course-card-container">
                 <!-- course card one -->
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-sm-4 mt-0">
                     <div class="card">
-                        <img src="/resources/img/psy-photo.png" alt="course banner" class="course-photo">
-                        <img src="/resources/img/psy-person.png" alt="course person" class="person-photo">
+                        <img src="resources/img/psy-photo.png" alt="course banner" class="course-photo">
+                        <img src="resources/img/psy-person.png" alt="course person" class="person-photo">
                         <div class="batch">
                             Free
                         </div>
                         <!-- Course  info  -->
                         <div class="course-info">
-                            <h3 class="course-title">
+                            <h2 class="course-title">
                                 Modern Psychology
-                            </h3>
+                            </h2>
                             <p class="designation">Designation</p>
                             <button class="btn btn-danger course-btn">
                                 Buy Course
@@ -376,11 +375,11 @@
                             <!-- time and seat -->
                             <div class="course-footer">
                                 <div class="course-time">
-                                    <img src="/resources/img/calender.png" alt="course time" class="c-icon">
+                                    <img src="resources/img/calender.png" alt="course time" class="c-icon">
                                     <p class="c-text">Start: 20 July, 2020</p>
                                 </div>
                                 <div class="seat">
-                                    <img src="/resources/img/seat.png" alt="" class="c-icon">
+                                    <img src="resources/img/seat.png" alt="" class="c-icon">
                                     <p class="c-text">60 Seats</p>
                                 </div>
                             </div>
@@ -391,16 +390,16 @@
                 <!-- course card two -->
                 <div class="col-12 col-sm-4">
                     <div class="card">
-                        <img src="/resources/img/hr-photo.png" alt="course banner" class="course-photo">
-                        <img src="/resources/img/hr-person.png" alt="course person" class="person-photo">
+                        <img src="resources/img/hr-photo.png" alt="course banner" class="course-photo">
+                        <img src="resources/img/hr-person.png" alt="course person" class="person-photo">
                         <div class="batch">
                             Free
                         </div>
                         <!-- Course  info  -->
                         <div class="course-info">
-                            <h3 class="course-title">
-                                Modern Psychology
-                            </h3>
+                            <h2 class="course-title">
+                                HR Management
+                            </h2>
                             <p class="designation">Designation</p>
                             <button class="btn btn-danger course-btn">
                                 Buy Course
@@ -408,11 +407,11 @@
                             <!-- time and seat -->
                             <div class="course-footer">
                                 <div class="course-time">
-                                    <img src="/resources/img/calender.png" alt="course time" class="c-icon">
+                                    <img src="resources/img/calender.png" alt="course time" class="c-icon">
                                     <p class="c-text">Start: 20 July, 2020</p>
                                 </div>
                                 <div class="seat">
-                                    <img src="/resources/img/seat.png" alt="" class="c-icon">
+                                    <img src="resources/img/seat.png" alt="" class="c-icon">
                                     <p class="c-text">60 Seats</p>
                                 </div>
                             </div>
@@ -423,16 +422,16 @@
                 <!-- course card three -->
                 <div class="col-12 col-sm-4">
                     <div class="card">
-                        <img src="/resources/img/mpsy-photo.png" alt="course banner" class="course-photo">
-                        <img src="/resources/img/mpsy-person.png" alt="course person" class="person-photo">
+                        <img src="resources/img/mpsy-photo.png" alt="course banner" class="course-photo">
+                        <img src="resources/img/mpsy-person.png" alt="course person" class="person-photo">
                         <div class="batch">
                             Free
                         </div>
                         <!-- Course  info  -->
                         <div class="course-info">
-                            <h3 class="course-title">
+                            <h2 class="course-title">
                                 Modern Psychology
-                            </h3>
+                            </h2>
                             <p class="designation">Designation</p>
 
                             <button class="btn btn-danger course-btn">
@@ -441,11 +440,11 @@
                             <!-- time and seat -->
                             <div class="course-footer">
                                 <div class="course-time">
-                                    <img src="/resources/img/calender.png" alt="course time" class="c-icon">
+                                    <img src="resources/img/calender.png" alt="course time" class="c-icon">
                                     <p class="c-text">Start: 20 July, 2020</p>
                                 </div>
                                 <div class="seat">
-                                    <img src="/resources/img/seat.png" alt="" class="c-icon">
+                                    <img src="resources/img/seat.png" alt="" class="c-icon">
                                     <p class="c-text">60 Seats</p>
                                 </div>
                             </div>
@@ -455,15 +454,23 @@
                 </div>
             </div>
             <!-- course card end -->
+
+            <div class="row">
+                <div class="col text-center">
+                    <button class="btn  btn-outline-danger all-course">View All Courses</button>
+                </div>
+            </div>
+
         </div>
 
         <!-- dot separator -->
-        <div class="dot-img-1">
-            <img src="/resources/img/dot.png" alt="">
+        <!-- dot 1 -->
+        <!-- <div class="dot-img-1">
+            <img src="resources/img/dot.png" alt="">
         </div>
         <div class="dot-img-2">
-            <img src="/resources/img/dot.png" alt="">
-        </div>
+            <img src="resources/img/dot.png" alt="">
+        </div> -->
     </section>
     <!-- END ONLINE COURSES SECTION -->
 
@@ -482,21 +489,19 @@
                                 <div class="row">
                                     <!-- client image -->
                                     <div class="col-12 col-sm-3">
-                                        <img src="/resources/img/testimonial-img.png" alt="">
+                                        <img src="resources/img/testimonial-img.png" alt="">
                                     </div>
                                     <!-- comment -->
                                     <div class="col-12 col-sm-9">
-                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                        <span class="bk-1"></span>
                                         <p class="comment">
-
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                            Quas voluptatibus
-                                            iste laudantium inventore aut quisquam, est natus incidunt necessitatibus
-                                            non, repellat rem perspiciatis sapiente, officia a saepe eum doloribus quia.
-
+                                            There are many variations of passages of Lorem Ipsum available, but the
+                                            majority have suffered alteration in some form, by injected humour, or
+                                            randomised words which don't look even slightly believable.
                                         </p>
+                                        <span class="bk-2"></span>
 
-                                        <i class="fa fa-quote-right float-right" aria-hidden="true"></i>
+                                        <!-- <i class="fa fa-quote-right float-right" aria-hidden="true"></i> -->
 
                                         <!-- ratting -->
                                         <div class="rating">
@@ -523,23 +528,23 @@
                                 <div class="row">
                                     <!-- client image -->
                                     <div class="col-12 col-sm-3">
-                                        <img src="/resources/img/testimonial-img.png" alt="">
+                                        <img src="resources/img/testimonial-img.png" alt="">
                                     </div>
 
 
                                     <div class="col-12 col-sm-9">
                                         <!-- commetns -->
-                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                        <span class="bk-1"></span>
                                         <p class="comment">
 
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                            Quas voluptatibus
-                                            iste laudantium inventore aut quisquam, est natus incidunt necessitatibus
-                                            non, repellat rem perspiciatis sapiente, officia a saepe eum doloribus quia.
+                                            There are many variations of passages of Lorem Ipsum available, but the
+                                            majority have suffered alteration in some form, by injected humour, or
+                                            randomised words which don't look even slightly believable.
 
                                         </p>
+                                        <span class="bk-2"></span>
 
-                                        <i class="fa fa-quote-right float-right" aria-hidden="true"></i>
+
 
                                         <!-- ratting -->
                                         <div class="rating">
@@ -603,47 +608,50 @@
                 <div class="container-fluid custom-container">
                     <div class="row">
                         <!-- description -->
-                        <div class="col-12 col-sm-5 basic-info">
+                        <div class="col-12 col-sm-4 basic-info">
                             <div class="footer-basic-info">
                                 <p style="font-size: 1.6rem;">Millions of people of all ages and from
                                     around the world are improving their
                                     lives with us</p>
                             </div>
                             <!-- copy right -->
-                            <div class="coptright">
-                                <p style="font-size: 1.4rem;"></p> Copyright &copy2020 Rokomari.com
+                            <div class="copyright">
+                                Copyright &copy2020 Rokomari.com
                             </div>
 
                         </div>
 
-                        <div class="col-12 col-sm-7">
+                        <div class="col-12 col-sm-8">
                             <div class="footer-links">
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-4">
                                         <p>Courses</p>
                                         <ul class="align-self-center">
-                                            <li><a href="/book">Books</a></li>
-                                            <li><a href="/electronics">Electronics</a></li>
-                                            <li><a href="/product/category/2086">Accessories</a></li>
-                                            <li><a href="/list/40891">Gift Card</a></li>
-                                            <li><a href="/product/category/2086/Product">Stationery</a></li>
+                                            <li><a href="">Graphics Design</a></li>
+                                            <li><a href="">Web Development</a></li>
+                                            <li><a href="">Business</a></li>
+                                            <li><a href="">Marketing</a></li>
+                                            <li><a href="">ENgineering</a></li>
                                         </ul>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-4">
                                         <p>Terms</p>
                                         <ul class="align-self-center">
-                                            <li><a href="/brands">Brands</a></li>
-                                            <li><a href="/book/authors">Authors</a></li>
-                                            <li><a href="/book/publishers">Publishers</a></li>
-                                            <li><a href="/lists">List</a></li>
-                                            <li><a href="/reviews">Reviews</a></li>
+                                            <li><a href="">Terms of Use</a></li>
+                                            <li><a href="">Privacy Policy</a></li>
+                                            <li><a href="">Support Policy</a></li>
+                                            <li><a href="">Refund Policy</a></li>
+
                                         </ul>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-4 pl-0">
                                         <p>Useful Links</p>
                                         <ul class="align-self-center">
-                                            <li><a href="/aboutus">About Us</a></li>
-                                            <li><a href="/sitemap">Site Map</a></li>
+                                            <li><a href="">Learning Community</a></li>
+                                            <li><a href="">Become a Contributor</a></li>
+                                            <li><a href="">Support Forum</a></li>
+                                            <li><a href="">FAQ's</a></li>
+                                            <li><a href="">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -666,7 +674,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- resource scripts -->
-    <script src="/resources/js/app.js"></script>
+    <script src="resources/js/app.js"></script>
 </body>
 
 </html>

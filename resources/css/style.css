@@ -20,19 +20,34 @@ body {
 /* ===================== */
 /* Header  */
 /* ===================== */
+header {
+  min-height: 15rem;
+}
 header .main-header {
   width: 100%;
-  padding: 2rem 0;
+  min-height: 9.6rem;
+  padding: 2.3rem 0;
   background-color: #fff;
   z-index: 9999;
+  box-shadow: 0rem -0.3rem 0.5rem #040405;
+}
+.custom-container {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  max-width: 117rem;
+  margin: 0 auto;
+  padding: 0;
 }
 
 header .header-logo img {
-  width: 11rem;
-  height: 4rem;
+  width: 13.5rem;
+  height: 5rem;
 }
 
 header .search-bar {
+  height: 5rem;
+  width: 69.2rem;
   box-shadow: -0.2rem -0.2rem 0.3rem rgb(222 221 221);
   border-radius: 0.2rem 0 0 0.2rem;
   color: #757575;
@@ -42,7 +57,8 @@ header .search-bar {
 }
 header .search-bar .select-btn {
   font-size: 1.5rem;
-  width: auto;
+  width: 8.5rem;
+  height: 5rem;
   background: #fff;
   color: #757575;
   outline: none;
@@ -50,12 +66,17 @@ header .search-bar .select-btn {
   border-bottom: 0.2rem solid #ff9900;
   border-radius: 0.2rem 0 0 0.2rem;
 }
+.select-btn i {
+  font-size: 1.5rem !important;
+  padding-top: 0.6rem;
+}
 
 header .search-bar input {
   border: none;
   font-size: 1.4rem;
   line-height: 4.5rem;
-  height: 4.5rem;
+  height: 5rem;
+  width: 54.5rem;
   border-bottom: 0.2rem solid #ff9900;
 }
 
@@ -64,19 +85,21 @@ header .search-bar button {
   color: #fff;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  width: 4rem;
+  width: 6.5rem;
 }
 header .search-bar button i {
-  font-size: 1.6rem;
+  font-size: 2.5rem;
 }
 .dropdown-toggle::after {
   display: none;
 }
 
 header .main-header .header-last {
+  height: 5rem;
+  min-width: 9.5rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .cart-menu {
@@ -86,10 +109,7 @@ header .main-header .header-last {
 
 /* menu container */
 .menu-container {
-  min-height: 5.5rem;
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
+  height: 5.4rem;
   font-size: 1.5rem;
   color: #212837;
   text-transform: uppercase;
@@ -98,16 +118,35 @@ header .main-header .header-last {
 
 /* nav bar */
 
+nav {
+  min-width: 78rem;
+  margin-left: 23rem;
+  margin-right: 16rem;
+  /* padding: 1.3rem 0rem; */
+  padding-top: 1.35rem;
+}
+.menu-container nav ul {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  margin: 0 auto;
+}
 .menu-container nav ul li {
   display: inline-block;
-  padding: 0.2rem 2.5rem;
+  margin-right: 4.5rem;
+}
+
+.menu-container nav ul li:last-child {
+  margin-right: 0;
+  text-align: right;
 }
 
 .menu-container nav ul li a {
   color: #212837;
   text-decoration: none;
   font-weight: 500;
-  display: inline-block;
+  font-size: 1.5rem;
 }
 
 .menu-container nav ul li a:hover {
@@ -115,14 +154,14 @@ header .main-header .header-last {
 }
 .menu-container nav ul li:not(:last-child):hover ::after {
   font-family: FontAwesome;
-  content: " \f106";
-  font-size: 1.8rem;
+  content: "  \f106";
+  font-size: 1.7rem;
 }
 
 .menu-container nav ul li:not(:last-child) ::after {
   font-family: FontAwesome;
-  content: " \f107";
-  font-size: 1.8rem;
+  content: "  \f107";
+  font-size: 1.7rem;
 }
 
 .sub-menu {
@@ -130,7 +169,7 @@ header .main-header .header-last {
   height: fit-content;
   z-index: 9999;
   position: absolute;
-  top: 2.5rem;
+  top: 4rem;
   width: 100%;
   padding: 2rem;
   box-shadow: 0.2rem 0.2rem 1rem #a1a1a1;
@@ -168,8 +207,8 @@ header .main-header .header-last {
 }
 
 .slider-section .banner-photo img {
-  height: 48rem;
-  width: 54rem;
+  height: 50rem;
+  width: 52.7rem;
   display: inline-block;
   margin-top: auto;
   margin-bottom: auto;
@@ -177,38 +216,51 @@ header .main-header .header-last {
 }
 
 .slider-section .row {
-  justify-content: center;
   align-items: center;
   height: 100%;
 }
 
+.slider-text {
+  margin-top: 0rem;
+  height: 35rem;
+}
+
 .slider-section .btn-start {
   width: 26rem;
+  height: 6rem;
   font-size: 2.5rem;
-  border-radius: 2rem;
+  border-radius: 3rem;
+  margin-top: 3.8rem;
 }
 
 /* review section */
 .report-section {
   min-height: 52rem;
   width: 100%;
+  padding-top: 11rem !important;
+  position: relative;
 }
 .report-section .row {
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 .view-card {
-  height: 28rem;
+  background: #fff;
+  height: 28.5rem;
   min-width: 27rem;
   box-shadow: 0.2rem 0.2rem 1rem #a1a1a1;
-  border-radius: 1rem;
-  margin: 2rem;
+  border-radius: 0.5rem;
+  margin-right: 1.5rem;
+  position: relative;
+  z-index: 99;
 }
 
 .view-icon {
-  background: url("/resources/img/back1.png") no-repeat;
-  background-size: 100%;
+  background: url("resources/img/back1.png") no-repeat center top;
+  background-origin: content-box;
+  background-size: 78%;
   height: 16rem;
   width: 100%;
   padding-top: 5rem;
@@ -242,6 +294,7 @@ header .main-header .header-last {
 .description p {
   color: #555555;
   font-size: 1.9rem;
+  padding-top: 1rem;
 }
 
 /* online courses */
@@ -256,20 +309,20 @@ header .main-header .header-last {
 /* dot sep  */
 .dot-img-2 {
   position: absolute;
-  top: -7rem;
-  right: 2rem;
+  top: -19rem;
+  right: 10.68%;
   z-index: -1;
 }
 .dot-img-1 {
   position: absolute;
-  bottom: -7rem;
-  left: 2rem;
+  bottom: -6rem;
+  right: 10.68%;
   z-index: -1;
 }
 .dot-img-2 img,
 .dot-img-1 img {
-  height: 60%;
-  width: 60%;
+  height: 25rem;
+  width: 34rem;
 }
 
 .title {
@@ -278,10 +331,10 @@ header .main-header .header-last {
   text-align: center;
 }
 .course-container .title {
-  padding-top: 12rem;
+  padding-top: 10rem;
 }
 .course-card-container {
-  padding-top: 18rem;
+  padding-top: 13.5rem;
 }
 
 .card {
@@ -302,7 +355,7 @@ header .main-header .header-last {
 .card .person-photo {
   position: absolute;
   bottom: 48%;
-  left: 10%;
+  left: 7%;
   background-color: #cccccc;
   height: 8rem;
   width: 8rem;
@@ -314,26 +367,27 @@ header .main-header .header-last {
 
 .batch {
   position: absolute;
-  bottom: 52%;
-  right: 10%;
+  bottom: 52.1%;
+  right: 8%;
   text-align: center;
   border-radius: 2rem;
   font-weight: 500;
-  width: 8.5rem;
+  width: 8.4rem;
   font-size: 1.4rem;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   color: #fff;
   background: linear-gradient(-90deg, #9903e2, #4112d4);
 }
 
 .card .course-info {
-  margin-top: 7.7rem;
+  margin-top: 7.3rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
 .card .course-info .course-title {
   font-size: 2rem;
   color: #050054;
+  margin-bottom: 1.2rem;
 }
 
 .card .course-info .designation {
@@ -343,11 +397,11 @@ header .main-header .header-last {
 
 .card .course-info .course-btn {
   border-radius: 2rem;
-  width: 17rem;
+  width: 16.7rem;
   height: 4rem;
-  margin-top: 3rem;
   font-size: 1.6rem;
-  margin-top: 3rem;
+  margin-top: 1.4rem;
+  margin-left: -0.2rem;
 }
 
 .card .course-footer {
@@ -356,21 +410,32 @@ header .main-header .header-last {
   align-items: center;
   align-self: center;
   border-top: 0.2rem solid #e6e6e6;
-  padding-top: 0.5rem;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
+  padding-top: 1.9rem;
+  padding-left: 0.2rem;
 }
 
 .card .course-footer p {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   align-self: center;
   display: inline-block;
   padding-top: 0.5rem;
   font-size: 1.4rem;
   color: #555555;
 }
-.course-footer img {
-  height: 2.5rem;
-  width: 2.5rem;
+.course-footer .course-time img {
+  height: 1.8rem;
+  width: 2.2rem;
+}
+
+.course-container .all-course {
+  margin-top: 3.6rem;
+  width: 21rem;
+  height: 5rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-left: -1rem;
 }
 /* testimonial section */
 .testimonial-section {
@@ -378,41 +443,78 @@ header .main-header .header-last {
 }
 
 .testimonial-section .title {
-  padding-top: 15rem;
+  padding-top: 12rem;
+  margin-left: -2rem;
+  margin-bottom: 0;
 }
 .user-review {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75%;
-  margin: 4.5rem auto;
+  width: 85%;
+  margin: 3rem auto;
 }
 
 .user-review img {
   height: 15rem;
   width: 15rem;
+  margin-top: 1.5rem !important;
 }
 
-.user-review .comment,
-.user-review i {
+.user-review .comment {
+  position: relative;
+  width: 86%;
   font-size: 2rem;
   color: #777777;
-  text-align: justify;
+  text-align: left;
+  /* margin: 0 auto; */
+  line-height: 1.3;
+  margin-left: 4rem;
+  margin-top: 0.5rem;
 }
 
-.comment {
+.bk-1,
+.bk-2 {
+  width: 4rem;
+  height: 3rem;
+}
+.bk-1 {
+  background: url("resources/img/q1.png") no-repeat left center;
+  background-size: 100%;
+  position: absolute;
+  left: -1.8rem;
+}
+.bk-2 {
+  background: url("resources/img/q2.png") no-repeat left center;
+  background-size: 100%;
+  position: absolute;
+  right: 2.2rem;
+  bottom: 6.2rem;
+}
+
+/* .comment {
   width: 80%;
   text-align: center;
   margin: 0 auto;
+} */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2.2rem;
+  height: 4rem;
 }
-
 .carousel-control-prev-icon {
-  background-image: url("/resources/img/prev.png");
+  background-image: url("resources/img/prev.png");
   background-size: cover;
 }
 .carousel-control-next-icon {
-  background-image: url("/resources/img/next.png");
+  background-image: url("resources/img/next.png");
   background-size: cover;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  bottom: 2.4rem;
+  width: 3%;
 }
 
 /* ratting */
@@ -420,12 +522,21 @@ header .main-header .header-last {
   display: inline-block;
 }
 .rating {
-  margin-left: 5rem;
+  margin-left: 4rem;
+  margin-top: 4.5rem;
   line-height: 3.2rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 .rating .user-info {
-  padding-left: 2rem;
+  padding-left: 1.8rem;
+}
+.rating .user-info h3 {
+  font-size: 2rem;
+}
+
+.user-info p {
+  font-size: 1.8rem;
+  padding-left: 0.6rem;
 }
 
 .rating .fa-star {
@@ -434,51 +545,65 @@ header .main-header .header-last {
 
 /* footer section */
 .footer-section {
-  height: fit-content;
+  height: 76rem;
   width: 100%;
-  background: url("/resources/img/footer.png") no-repeat top left;
+  background: url("../img/footer.png") no-repeat top left;
   background-size: cover;
   overflow: hidden;
   padding-top: 13rem;
   z-index: 999;
+  margin-top: 7rem;
 }
 
 .newsletter {
   height: 23rem;
   width: 100%;
-  margin: 0 auto;
-
-  border-radius: 2rem;
+  margin: -2.2rem auto;
+  border-radius: 1rem;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 3rem;
+  padding: 0 3.5rem;
 }
 
 .newsletter h3 {
   font-size: 3rem;
   color: #0c00d1;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .newsletter p {
   font-size: 1.7rem;
   color: #555555;
+  /* margin-top: 1.5rem; */
+  width: 82%;
+  line-height: 3rem;
 }
 
 .newsletter button,
 .newsletter input {
-  height: 6.5rem;
+  height: 6rem;
   font-size: 1.8rem;
+  margin-top: 0.7rem;
 }
 
 .newsletter input {
+  font-size: 1.8rem;
+  margin-left: 2.2rem;
+
+  border: unset;
+  background: #e5e5ed;
+  padding-left: 3rem;
   width: 40rem;
 }
 .newsletter input::placeholder {
   color: #555555;
 }
 .newsletter button {
-  margin-left: 2rem;
+  margin-left: 1rem;
+  padding: 0;
+  width: 17rem;
 }
 
 /* large footer */
@@ -487,17 +612,34 @@ header .main-header .header-last {
   color: #b3b0df;
 }
 .basic-info {
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 .footer-basic-info {
   width: 29rem;
+  line-height: 2.8rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  margin-top: 4rem;
+}
+
+.footer-links {
+  margin-top: 1rem;
 }
 
 .footer-links p {
   font-size: 2.5rem;
   color: #fff;
 }
+.footer-links ul {
+  list-style-type: none;
+  margin-top: 3.8rem;
+}
 
+.footer-links ul li {
+  margin-top: 1.6rem;
+}
 .footer-links ul li a {
   text-decoration: none;
   color: #b3b0df;
