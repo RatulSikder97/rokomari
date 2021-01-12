@@ -480,13 +480,13 @@ nav {
   height: 3rem;
 }
 .bk-1 {
-  background: url("resources/img/q1.png") no-repeat left center;
+  background: url("../img/q1.png") no-repeat left center;
   background-size: 100%;
   position: absolute;
   left: -1.8rem;
 }
 .bk-2 {
-  background: url("resources/img/q2.png") no-repeat left center;
+  background: url("../img/q2.png") no-repeat left center;
   background-size: 100%;
   position: absolute;
   right: 2.2rem;
@@ -504,11 +504,11 @@ nav {
   height: 4rem;
 }
 .carousel-control-prev-icon {
-  background-image: url("resources/img/prev.png");
+  background-image: url("../img/prev.png");
   background-size: cover;
 }
 .carousel-control-next-icon {
-  background-image: url("resources/img/next.png");
+  background-image: url("../img/next.png");
   background-size: cover;
 }
 
