@@ -109,7 +109,7 @@ header .main-header .header-last {
 
 /* menu container */
 .menu-container {
-  height: 5.4rem;
+  min-height: 5.4rem;
   font-size: 1.5rem;
   color: #212837;
   text-transform: uppercase;
@@ -119,7 +119,7 @@ header .main-header .header-last {
 /* nav bar */
 
 nav {
-  min-width: 78rem;
+  max-width: 78rem;
   margin-left: 23rem;
   margin-right: 16rem;
   /* padding: 1.3rem 0rem; */
@@ -255,6 +255,7 @@ nav {
   margin-right: 1.5rem;
   position: relative;
   z-index: 99;
+  /* margin-bottom: 2rem; */
 }
 
 .view-icon {
@@ -315,14 +316,14 @@ nav {
 }
 .dot-img-1 {
   position: absolute;
-  bottom: -6rem;
-  right: 10.68%;
+  left: 20.2rem;
+  bottom: -11.5rem;
   z-index: -1;
 }
 .dot-img-2 img,
 .dot-img-1 img {
-  height: 25rem;
-  width: 34rem;
+  height: auto;
+  max-width: 100%;
 }
 
 .title {
@@ -545,7 +546,8 @@ nav {
 
 /* footer section */
 .footer-section {
-  height: 76rem;
+  height: fit-content;
+  min-height: 76rem;
   width: 100%;
   background: url("../img/footer.png") no-repeat top left;
   background-size: cover;

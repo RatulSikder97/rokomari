@@ -1,3 +1,19 @@
+@media (max-width: 1609px) {
+  /* dot sep  */
+  .dot-img-2 {
+    position: absolute;
+    top: -19rem;
+    right: 0%;
+    z-index: -1;
+  }
+  .dot-img-1 {
+    position: absolute;
+    left: 5rem;
+    bottom: -11.5rem;
+    z-index: -1;
+  }
+}
+
 @media (min-width: 1200px) {
   .custom-container {
     padding: 0;
@@ -17,9 +33,24 @@
   }
 }
 @media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .dot-img-1,
   .dot-img-2 {
     display: none;
+  }
+
+  .view-card {
+    margin: 1rem auto;
+    padding: 0;
+  }
+
+  .card {
+    width: 95%;
+    margin: 1rem auto;
+    padding: 0;
   }
 }
 @media (max-width: 576px) {
