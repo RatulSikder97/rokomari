@@ -57,6 +57,9 @@
   .slider-section .banner-photo img {
     display: none !important;
   }
+  .slider-section .slider-text {
+    text-align: center;
+  }
   /* .card {
     height: 90rem;
   } */
