@@ -259,7 +259,7 @@ nav {
 }
 
 .view-icon {
-  background: url("resources/img/back1.png") no-repeat center top;
+  background: url("../img/back1.png") no-repeat center top;
   background-origin: content-box;
   background-size: 78%;
   height: 16rem;
